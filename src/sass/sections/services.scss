@@ -1,0 +1,60 @@
+.services__list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+}
+
+.services__card {
+  flex-basis: 380px;
+}
+
+.services__card {
+  padding-left: 80px;
+  background-repeat: no-repeat;
+  background-position: 20px 4px;
+}
+
+.services__card:not(:nth-last-of-type(-n + 3)) {
+  margin-bottom: 96px;
+}
+
+.icon-alarm {
+  background-image: url(../images/icon/alarm.svg);
+}
+
+.icon-linegraph {
+  background-image: url(../images/icon/linegraph.svg);
+}
+
+.icon-computer {
+  background-image: url(../images/icon/computer.svg);
+}
+
+.icon-book {
+  background-image: url(../images/icon/book.svg);
+}
+
+.icon-home {
+  background-image: url(../images/icon/home.svg);
+}
+
+.icon-image {
+  background-image: url(../images/icon/image.svg);
+}
+
+.services__card-title {
+  font-weight: $secondary-font-weight;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.services__card-description {
+  font-family: $secondary-font;
+  font-weight: $secondary-font-weight;
+  font-size: 15px;
+  line-height: 24px;
+  color: $secondary-text-color;
+}
