@@ -1,60 +1,57 @@
-.services__list {
-  display: flex;
+.services {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-  flex-wrap: wrap;
+  &__card {
+    flex-basis: 380px;
+    padding-left: 80px;
+    background-repeat: no-repeat;
+    background-position: 20px 4px;
 
-  justify-content: space-around;
-}
+    &:not(:nth-last-of-type(-n + 3)) {
+      margin-bottom: 96px;
+    }
 
-.services__card {
-  flex-basis: 380px;
-}
+    &_icon-alarm {
+      background-image: url(../images/icon/alarm.svg);
+    }
 
-.services__card {
-  padding-left: 80px;
-  background-repeat: no-repeat;
-  background-position: 20px 4px;
-}
+    &_icon-linegraph {
+      background-image: url(../images/icon/linegraph.svg);
+    }
 
-.services__card:not(:nth-last-of-type(-n + 3)) {
-  margin-bottom: 96px;
-}
+    &_icon-computer {
+      background-image: url(../images/icon/computer.svg);
+    }
 
-.icon-alarm {
-  background-image: url(../images/icon/alarm.svg);
-}
+    &_icon-book {
+      background-image: url(../images/icon/book.svg);
+    }
 
-.icon-linegraph {
-  background-image: url(../images/icon/linegraph.svg);
-}
+    &_icon-home {
+      background-image: url(../images/icon/home.svg);
+    }
 
-.icon-computer {
-  background-image: url(../images/icon/computer.svg);
-}
+    &_icon-image {
+      background-image: url(../images/icon/image.svg);
+    }
+  }
 
-.icon-book {
-  background-image: url(../images/icon/book.svg);
-}
+  &__card-title {
+    font-weight: $secondary-font-weight;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
 
-.icon-home {
-  background-image: url(../images/icon/home.svg);
-}
-
-.icon-image {
-  background-image: url(../images/icon/image.svg);
-}
-
-.services__card-title {
-  font-weight: $secondary-font-weight;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.services__card-description {
-  font-family: $secondary-font;
-  font-weight: $secondary-font-weight;
-  font-size: 15px;
-  line-height: 24px;
-  color: $secondary-text-color;
+  &__card-description {
+    font-family: $secondary-font;
+    font-weight: $secondary-font-weight;
+    font-size: 15px;
+    line-height: 24px;
+    color: $secondary-text-color;
+  }
 }
